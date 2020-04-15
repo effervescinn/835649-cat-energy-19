@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алина Червонецкая](https://up.htmlacademy.ru/adaptive/19/user/835649).
-* Наставник: `Неизвестно`.
+* Наставник: `Студентка без наставника`.
 
 ---
 
