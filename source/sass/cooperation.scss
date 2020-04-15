@@ -1,0 +1,107 @@
+@media (min-width: $desktop-width) {
+  .cooperation {
+    position: relative;
+  }
+}
+
+.cooperation__address {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 25px;
+  background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation__address {
+    padding-top: 65px;
+    padding-bottom: 58px;
+    padding-left: 9.35%;
+    padding-right: 9.35%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation__address {
+    padding-left: 0;
+    padding-right: 0;
+    width: 39.6%;
+    position: absolute;
+    top: 96px;
+    left: 7.6%;
+    background-color: $white;
+  }
+}
+
+.cooperation__title {
+  width: 44%;
+  margin: 0;
+  padding: 0;
+  margin-left: 6%;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation__title {
+    margin: 0;
+    padding-right: 40%;
+    line-height: 25px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation__title {
+    width: auto;
+    margin: 0;
+    padding-right: 0;
+    padding-left: 13.5%;
+    padding-right: 5%;
+  }
+}
+
+.cooperation__description {
+  display: flex;
+  flex-direction: column;
+  @include description-text;
+  width: 50%;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation__description {
+    width: auto;
+    margin: 0;
+    font-size: 16px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cooperation__description {
+    text-align: left;
+    padding-right: 15%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation__street {
+    margin-bottom: 20px;
+    margin-top: -2px;
+  }
+}
+
+.cooperation__map-interactive {
+  width: 100%;
+  height: 362px;
+}
+
+@media (min-width: $tablet-width) {
+  .cooperation__map-interactive {
+    height: 401px;
+  }
+}

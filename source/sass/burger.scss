@@ -1,0 +1,19 @@
+.burger {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .burger {
+    display: none;
+  }
+}
+
+.burger__line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin-bottom: 6px;
+    background-color: #222222;
+  }
