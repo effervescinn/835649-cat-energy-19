@@ -1,5 +1,4 @@
 .page-header {
-  font-family: $font;
   display: flex;
   flex-direction: column;
 }
@@ -51,7 +50,7 @@
 }
 
 .page-header__logo {
-  padding-top: 12px;
+  padding-top: 11px;
 }
 
 @media (min-width: $tablet-width) {
