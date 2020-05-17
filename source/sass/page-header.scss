@@ -8,7 +8,7 @@
     width: 92.2%;
     margin: 0 auto;
     flex-direction: row;
-    justify-content: space-between;
+    //justify-content: space-between;
   }
 }
 
@@ -40,12 +40,14 @@
 @media (min-width: $tablet-width) {
   .page-header__wrap {
     padding: 0;
+    flex-grow: 1;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__wrap {
     padding: 0;
+    width: 50%;
   }
 }
 

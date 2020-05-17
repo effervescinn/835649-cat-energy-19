@@ -101,8 +101,9 @@
 
 @media (min-width: $desktop-width) {
   .welcome__image {
-    top: 22px;
-    right: 328px;
+    margin: 0;
+    top: 24px;
+    left: 38.9%;
     z-index: 1;
   }
 }
