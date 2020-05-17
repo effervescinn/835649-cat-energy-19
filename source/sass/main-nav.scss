@@ -1,4 +1,14 @@
+@media (min-width: $tablet-width) {
+  .main-nav {
+    flex-grow: 1;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 50%;
+  }
+}
 
 @media (min-width: $tablet-width) {
   .main-nav__wrapper {
@@ -14,8 +24,12 @@
   }
 }
 
-
-
 .main-nav__list {
   @include list;
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__list {
+    padding-left: 19.3%;
+  }
 }

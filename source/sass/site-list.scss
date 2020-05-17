@@ -1,5 +1,5 @@
 .site-list {
-  @include list;
+  //@include list;
   display: flex;
   flex-direction: column;
 }
@@ -8,6 +8,8 @@
   .site-list {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 }
 
@@ -65,10 +67,6 @@
   }
 }
 
-.site-list__item {
-  flex-grow: 1;
-}
-
 @media (max-width: $mobile-width-only) {
   .site-list__item {
     flex-grow: 1;
@@ -82,12 +80,7 @@
 
 @media (min-width: $tablet-width) {
   .site-list__item {
-    margin-left: 38px;
+    margin-left: 2.58%;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .site-list__item {
-    margin-left: 34px;
-  }
-}
