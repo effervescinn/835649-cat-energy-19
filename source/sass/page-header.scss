@@ -151,6 +151,12 @@
   display: none;
 }
 
+@media (max-width: $mobile-width-only) {
+  .page-header--no-js .main-nav {
+    display: block;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-header__logo-image--mobile {
     display: none;

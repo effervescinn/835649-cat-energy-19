@@ -25,17 +25,22 @@
   color: $black;
   text-transform: uppercase;
   cursor: pointer;
+
   &:hover {
     opacity: 0.6;
   }
+
   &:active {
     opacity: 0.3;
   }
+
   &--active {
     cursor: inherit;
+
     &:hover {
       opacity: 1;
     }
+
     &:active {
       opacity: 1;
     }
@@ -48,6 +53,7 @@
     line-height: 25px;
     font-size: 18px;
     font-weight: normal;
+
     &--active {
       border-bottom: 2px solid $green;
     }
@@ -58,9 +64,11 @@
   .site-list__link {
     line-height: 25px;
     font-size: 20px;
+
     &--white {
       color: $white;
     }
+
     &--active-white {
       border-bottom: 2px solid $white;
     }
@@ -72,6 +80,7 @@
     flex-grow: 1;
     text-align: center;
     border-bottom: 1px solid #e6e6e6;
+
     &:first-child {
       border-top: 1px solid #e6e6e6;
     }
@@ -83,4 +92,3 @@
     margin-left: 2.58%;
   }
 }
-

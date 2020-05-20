@@ -9,7 +9,8 @@
   padding-right: 6.25%;
   margin-bottom: 22px;
 
-  @media(min-resolution: $retina-dppx) {
+  @media(min-resolution: $retina-dppx),
+  (min-resolution: $retina-dpi) {
     background-image: url(../img/index-background-mobile@2x.jpg);
   }
 }
@@ -116,9 +117,11 @@
   line-height: 18px;
   font-size: 14px;
   text-align: center;
+
   &:hover {
     background-color: #5eaa2f;
   }
+
   &:active {
     color: #8fc46e;
   }
@@ -136,7 +139,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .welcome__choose-program{
+  .welcome__choose-program {
     margin-left: 13.2%;
     margin-bottom: 270px;
   }

@@ -47,6 +47,7 @@
   line-height: 24px;
   font-size: 24px;
   font-weight: normal;
+
   &::after {
     position: absolute;
     content: "";
@@ -65,10 +66,12 @@
     margin-bottom: 80px;
     line-height: 36px;
     font-size: 36px;
+
     &::after {
       width: 42.6%;
       bottom: 11px;
     }
+
     &::before {
       position: absolute;
       content: "";
@@ -85,10 +88,12 @@
   .extra__title {
     padding-top: 75px;
     padding-left: 7.5%;
+
     &::after {
       width: 66.4%;
       bottom: 10px;
     }
+
     &::before {
       width: 4.8%;
       bottom: 10px;
@@ -102,6 +107,7 @@
   padding-top: 14px;
   padding-bottom: 17px;
   border-bottom: 1px solid #cdcdcd;
+
   &:first-child {
     border-top: 1px solid #cdcdcd;
   }
@@ -115,9 +121,11 @@
     padding-bottom: 26px;
     flex-direction: row;
     flex-wrap: wrap;
+
     &:last-child {
       border-bottom: none;
     }
+
     &:first-child {
       border-top: none;
     }
@@ -131,9 +139,11 @@
     padding-top: 16px;
     padding-bottom: 15px;
     align-items: center;
+
     &:first-child {
       border-top: 1px solid #cdcdcd;
     }
+
     &:last-child {
       border-bottom: 1px solid #cdcdcd;
     }
@@ -211,6 +221,7 @@
   @include description-text;
   line-height: 14px;
   width: 50%;
+
   &--price {
     text-align: right;
   }
@@ -220,9 +231,11 @@
   .extra__field {
     line-height: 20px;
     font-size: 16px;
+
     &--quantity {
       text-align: right;
     }
+
     &--price {
       width: 25%;
     }
@@ -234,6 +247,7 @@
     &--quantity {
       text-align: left;
     }
+
     &--price {
       width: 16.5%;
       text-align: left;
@@ -244,9 +258,11 @@
 .extra__order {
   padding-top: 8px;
   padding-bottom: 8px;
+
   &:hover {
     background-color: #5eaa2f;
   }
+
   &:active {
     color: #8fc46e;
   }
@@ -274,7 +290,8 @@
   background-color: #68b738;
 }
 
-@media (min-resolution: 1.5dppx) {
+@media (min-resolution: 1.5dppx),
+(min-resolution: $retina-dpi) {
   .extra__offer {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
@@ -288,7 +305,8 @@
   }
 }
 
-@media (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
+@media (min-width: $tablet-width) and (min-resolution: 1.5dppx),
+(min-resolution: $retina-dpi) {
   .extra__offer {
     background-image: url("../img/gift-photo-tablet@2x.jpg");
   }
@@ -303,7 +321,8 @@
   }
 }
 
-@media (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
+@media (min-width: $desktop-width) and (min-resolution: 1.5dppx),
+(min-resolution: $retina-dpi) {
   .extra__offer {
     background-image: url("../img/gift-photo-desktop@2x.jpg");
   }
