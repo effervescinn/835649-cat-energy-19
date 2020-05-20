@@ -14,7 +14,8 @@ body {
     background-size: 50% 696px;
     background-position: top right;
 
-    @media(min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dppx),
+    (min-resolution: $retina-dpi) {
       background-image: url(../img/index-background-desktop@2x.jpg);
     }
   }
