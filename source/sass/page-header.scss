@@ -14,8 +14,31 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    width: 84.7%;
-    margin: 0 auto;
+    position: relative;
+    width: auto;
+    margin: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header--index:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 50%;
+    min-height: 696px;
+    background-image: url(../img/index-background-desktop@1x.jpg);
+    background-color: $green;
+    background-size: cover;
+    z-index: -1;
+
+    @media (min-resolution: $retina-dppx),
+    (min-resolution: $retina-dpi) {
+      background-image: url(../img/index-background-desktop@2x.jpg);
+    }
   }
 }
 
@@ -71,13 +94,16 @@
   &:hover {
     opacity: 0.7;
   }
+
   &:active {
     opacity: 0.3;
   }
+
   &--active {
     &:hover {
       opacity: 1;
     }
+
     &:active {
       opacity: 1;
     }
@@ -127,6 +153,7 @@
 
 
 .page-header--opened .page-header__toggle {
+
   &::before,
   &::after {
     content: "";
