@@ -10,7 +10,7 @@
 
 @media (min-width: $desktop-width) {
   .extra {
-    margin-bottom: 87px;
+    margin-bottom: 85px;
   }
 }
 
@@ -31,7 +31,7 @@
 
 @media (min-width: $desktop-width) {
   .extra__wrap {
-    width: 84.7%;
+    width: 93.9%;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -87,10 +87,11 @@
 @media (min-width: $desktop-width) {
   .extra__title {
     padding-top: 75px;
-    padding-left: 7.5%;
+    padding-left: 3%;
+    margin-bottom: 82px;
 
     &::after {
-      width: 66.4%;
+      width: 68.2%;
       bottom: 10px;
     }
 
