@@ -16,6 +16,7 @@
     padding-left: 3.1%;
     padding-right: 3.1%;
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -38,9 +39,11 @@
     margin-right: auto;
     margin-bottom: 34px;
   }
+
   &--comparison {
     position: relative;
     align-self: center;
+
     &::before {
       content: "";
       position: absolute;
@@ -57,6 +60,7 @@
 @media (min-width: $tablet-width) {
   .example__part {
     width: 100%;
+
     &--description {
       width: 92.2%;
     }
@@ -66,6 +70,7 @@
 @media (min-width: $desktop-width) {
   .example__part {
     width: 50%;
+
     &--comparison {
       &::before {
         display: none;
@@ -208,6 +213,7 @@
   .example__photo {
     max-width: 610px;
     margin-bottom: 25px;
+
     &::before {
       content: "";
       position: absolute;
@@ -231,10 +237,12 @@
 @media (min-width: $tablet-width) {
   .example__cat {
     position: absolute;
+
     &--fat {
       left: 46px;
       clip: rect(auto, 338px, auto, auto);
     }
+
     &--slim {
       display: block;
       right: 32px;
@@ -253,6 +261,7 @@
       top: 5px;
       clip: rect(auto, 365px, auto, auto);
     }
+
     &--slim {
       height: 517px;
       max-width: none;

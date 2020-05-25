@@ -333,7 +333,7 @@
   }
 }
 
-.fields__textfield:invalid + .fields__input-icon {
+.fields__textfield:invalid+.fields__input-icon {
   fill: #ff8282;
 }
 
