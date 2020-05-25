@@ -1,0 +1,269 @@
+.catalog__title {
+  margin: 0;
+  padding-top: 14px;
+  padding-left: 6.25%;
+  padding-bottom: 29px;
+  line-height: 60px;
+  font-size: 34px;
+  color: $black;
+  font-weight: normal;
+  border-top: 1px solid #ededed;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__title {
+    line-height: 60px;
+    font-size: 60px;
+    padding-left: 4%;
+    padding-top: 51px;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__title {
+    padding-left: 3.1%;
+    padding-top: 70px;
+    padding-bottom: 27px;
+  }
+}
+
+.catalog__list {
+  @include list;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    width: 92.2%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    width: 94%;
+    justify-content: space-between;
+  }
+}
+
+.catalog__item {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #ededed;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+
+  &:first-child {
+    border-top: 1px solid #ededed;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    margin-top: 140px;
+    border: none;
+    width: 45.7%;
+    background-color: #f2f2f2;
+
+    &:first-child {
+      border: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item {
+    width: 20.1%;
+    align-self: flex-start;
+  }
+}
+
+.catalog__image-link {
+  margin-right: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__image-link {
+    margin-left: auto;
+    text-align: center;
+
+    &--small {
+      margin-top: -47px;
+    }
+
+    &--big {
+      margin-top: -82px;
+    }
+  }
+}
+
+.catalog__item-info {
+  width: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item-info {
+    width: 76.8%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__item-info {
+    width: 69%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+
+.catalog__wrap {
+  display: flex;
+
+}
+
+.catalog h3 {
+  padding: 0;
+  margin-top: 21px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog h3 {
+    margin-top: 33px;
+    margin-bottom: 21px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__item--big h3 {
+    margin-top: 30px;
+  }
+}
+
+.catalog__name {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $black;
+  text-decoration: none;
+  display: block;
+  max-width: 100px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__name {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 130px;
+  }
+}
+
+.catalog__description {
+  @include description-text;
+  line-height: 16px;
+  font-size: 12px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__description {
+    margin-bottom: 38px;
+    font-size: 16px;
+  }
+}
+
+
+.catalog__volume {
+  text-align: left;
+}
+
+.catalog__field {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+
+  .catalog__volume,
+  .catalog__field--volume {
+    padding-bottom: 6px;
+    padding-top: 6px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .catalog__taste,
+  .catalog__field--taste {
+    padding-bottom: 7px;
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .catalog__price,
+  .catalog__field--price {
+    padding-bottom: 7px;
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__description tr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.catalog__order {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: -5px;
+  margin-bottom: 24px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: #8fc46e;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__order {
+    width: 76.8%;
+    margin-bottom: 39px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__order {
+    width: 69%;
+  }
+}
