@@ -27,17 +27,18 @@
   border: 1px solid #d9d9d9;
   border-radius: 5px;
   background:
-  #ffffff;
+    #ffffff;
+
   &:after {
     content: "";
-  position: absolute;
-  left: 5px;
-  top: 25%;
-  right: 5px;
-  width: 35px;
-  height: 6px;
-  border-radius: 10px;
-  background-color: #68b738;
+    position: absolute;
+    left: 5px;
+    top: 25%;
+    right: 5px;
+    width: 35px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: #68b738;
   }
 }
 
@@ -50,12 +51,14 @@
     margin-right: 21px;
     border: none;
     background-color: #dcdcdc;
+
     &::after {
       top: -1px;
       left: 49.1%;
       width: 8px;
       height: 8px;
     }
+
     &::before {
       content: "";
       position: absolute;
@@ -70,10 +73,12 @@
       box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
     }
   }
+
   .toggle__change:hover::before,
   .toggle__change:focus::before {
     box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.25);
   }
+
   .toggle__change:active::before {
     box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.35);
     border: 2px solid $green;
@@ -91,6 +96,7 @@
   line-height: 16px;
   font-family: "Oswald", sans-serif;
   color: #111111;
+
   &--before {
     margin-left: 4px;
   }
@@ -102,15 +108,18 @@
     line-height: 20px;
     border-bottom: 1px dotted #bebebe;
     padding-bottom: 5px;
+
     &--before {
       margin-left: 0;
     }
   }
+
   .toggle__button:hover,
   .toggle__button:focus {
-      border-bottom: 1px solid #989898;
-    }
+    border-bottom: 1px solid #989898;
+  }
+
   .toggle__button:active {
-      border-bottom: none;
-    }
+    border-bottom: none;
+  }
 }
