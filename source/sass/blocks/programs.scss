@@ -13,7 +13,9 @@
 
 @media (min-width: $desktop-width) {
   .programs {
-    width: 94%;
+    max-width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 

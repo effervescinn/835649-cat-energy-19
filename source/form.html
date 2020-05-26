@@ -390,7 +390,7 @@
       </div>
       <form action="https://echo.htmlacademy.ru" class="consultation__form fields" method="post">
         <div class="fields__main-wrapper">
-          <fieldset class="fields__wrapper fields__wrapper--main-info">
+          <div class="fields__wrapper fields__wrapper--main-info">
             <div class="fields__item">
               <label for="catname" class="fields__label">Имя:*</label>
               <input type="text" class="fields__textfield fields__textfield--required" id="catname" name="name" placeholder="Барсик" pattern="[а-яёА-ЯЁa-zA-Z]*">
@@ -403,8 +403,8 @@
               <label for="age" class="fields__label">Возраст (лет):</label>
               <input type="text" class="fields__textfield fields__textfield--age" id="age" name="age" placeholder="7">
             </div>
-          </fieldset>
-          <fieldset class="fields__wrapper fields__wrapper--program">
+          </div>
+          <div class="fields__wrapper fields__wrapper--program">
             <ul class="fields__list programs-list">
               <li class="programs-list__item">
                 <input type="radio" class="programs-list__input" name="program" value="slim" id="slim" checked="">
@@ -419,9 +419,9 @@
                 <label for="advice" class="programs-list__label" tabindex="0">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
-          </fieldset>
+          </div>
         </div>
-        <fieldset class="fields__wrapper fields__wrapper--contacts">
+        <div class="fields__wrapper fields__wrapper--contacts">
           <h2 class="fields__title fields__title--owner">Контактные данные (владельца кота)</h2>
           <div class="fields__cat-owner-wrapper">
             <div class="fields__item fields__item--email">
@@ -439,12 +439,12 @@
               </svg>
             </div>
           </div>
-        </fieldset>
-        <fieldset class="fields__wrapper fields__wrapper--comments">
+        </div>
+        <div class="fields__wrapper fields__wrapper--comments">
           <h2 class="fields__title fields__title--comments">Комментарий</h2>
           <textarea class="fields__textarea" name="more-about-cat" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </fieldset>
-        <fieldset class="fields__wrapper fields__wrapper--additional">
+        </div>
+        <div class="fields__wrapper fields__wrapper--additional">
           <h2 class="fields__title fields__title--additional">Дополнительно</h2>
           <ul class="fields__list additional-list">
             <li class="additional-list__item">
@@ -464,7 +464,7 @@
               <label for="vitamins" class="additional-list__label" tabindex="0">Витамины</label>
             </li>
           </ul>
-        </fieldset>
+        </div>
         <div class="fields__send-form">
           <button class="fields__button button" type="submit">Отправить заявку</button>
           <span class="fields__note">* — Обязательные поля</span>

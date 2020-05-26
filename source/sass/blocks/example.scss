@@ -13,8 +13,7 @@
 @media (min-width: $desktop-width) {
   .example {
     flex-direction: row;
-    padding-left: 3.1%;
-    padding-right: 3.1%;
+    padding: 0;
     position: relative;
 
     &::before {
@@ -24,7 +23,7 @@
       right: 0;
       bottom: 0;
       height: 462px;
-      background: linear-gradient(to right, #f2f2f2 80%, #eaeaea 80%);
+      background: linear-gradient(to right, #f2f2f2 55%, #eaeaea 55%);
       z-index: -1;
     }
   }
@@ -69,12 +68,18 @@
 
 @media (min-width: $desktop-width) {
   .example__part {
-    width: 50%;
+    max-width: 610px;
+    margin: 0;
 
     &--comparison {
+      margin-right: auto;
       &::before {
         display: none;
       }
+    }
+
+    &--description {
+      margin-left: auto;
     }
   }
 }
@@ -181,7 +186,7 @@
   .example__cost {
     margin-top: 0;
     margin-left: 0;
-    margin-right: auto;
+    align-self: flex-start;
     max-width: none;
   }
 }

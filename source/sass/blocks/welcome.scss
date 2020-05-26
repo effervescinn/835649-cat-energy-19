@@ -42,7 +42,10 @@
 
 @media (min-width: $desktop-width) {
   .welcome {
+    max-width: 1300px;
     margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
