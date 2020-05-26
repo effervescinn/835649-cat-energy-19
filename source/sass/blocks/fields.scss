@@ -106,6 +106,10 @@
 .fields__wrapper input[type="radio"]+label::after,
 .fields__wrapper input[type="checkbox"]+label::after {
   display: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .fields__wrapper input[type="radio"]:checked+label::after,
