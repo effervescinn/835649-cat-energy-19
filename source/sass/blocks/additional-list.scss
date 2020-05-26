@@ -90,6 +90,8 @@
   }
 
   &:focus {
+    outline: none;
+
     &:before {
       border-color: #bababa;
     }
