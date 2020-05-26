@@ -6,7 +6,9 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 50%;
+    max-width: 610px;
+    padding-right: 40px;
+
   }
 }
 

@@ -22,7 +22,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    width: 94%;
+    max-width: 1220px;
     padding-top: 55px;
     padding-bottom: 51px;
   }

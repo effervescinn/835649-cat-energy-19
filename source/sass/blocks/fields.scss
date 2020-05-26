@@ -461,7 +461,8 @@
     }
 
     &:after {
-      display: none;
+      width: 100vw;
+      z-index: -1;
     }
 
     &--owner {
