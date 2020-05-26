@@ -4,7 +4,7 @@ console.log(form);
 
 form.addEventListener("submit", function (evt) {
   var isEmpty = false;
-  for (let i = 0; i < requiredInputs.length; i++) {
+  for (var i = 0; i < requiredInputs.length; i++) {
     if (requiredInputs[i].value == null || requiredInputs[i].value == '') {
       isEmpty = true;
       break;
