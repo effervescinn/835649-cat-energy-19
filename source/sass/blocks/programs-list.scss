@@ -36,7 +36,7 @@
   font-size: 16px;
   text-transform: uppercase;
 
-  &::before {
+  &:before {
     content: "";
     position: absolute;
     left: 0;
@@ -47,7 +47,7 @@
     border: 1px solid #d9d9d9;
   }
 
-  &::after {
+  &:after {
     content: "";
     left: 9px;
     top: 6px;
@@ -58,6 +58,10 @@
     border: none;
     background: #68b738;
     margin-top: 0;
+  }
+
+  &:focus {
+    outline: none;
   }
 }
 
@@ -87,13 +91,13 @@
     line-height: 20px;
     font-size: 20px;
 
-    &::before {
+    &:before {
       width: 38px;
       height: 38px;
       top: -5px;
     }
 
-    &::after {
+    &:after {
       width: 18px;
       height: 18px;
       left: 11px;
