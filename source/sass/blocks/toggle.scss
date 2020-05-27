@@ -26,10 +26,9 @@
   height: 12px;
   border: 1px solid #d9d9d9;
   border-radius: 5px;
-  background:
-    #ffffff;
+  background: #ffffff;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     left: 5px;

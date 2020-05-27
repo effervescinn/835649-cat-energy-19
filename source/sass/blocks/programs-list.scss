@@ -13,19 +13,18 @@
     padding-left: 4.2%;
     padding-right: 4.2%;
     border-bottom: none;
-    ;
   }
 }
 
 @media (min-width: $tablet-width) {
   .programs-list {
-    padding-left: 4.3%
+    padding-left: 4.3%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .programs-list {
-    padding-left: 4.8%
+    padding-left: 4.8%;
   }
 }
 
@@ -36,7 +35,7 @@
   font-size: 16px;
   text-transform: uppercase;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     left: 0;
@@ -47,7 +46,7 @@
     border: 1px solid #d9d9d9;
   }
 
-  &:after {
+  &::after {
     content: "";
     left: 9px;
     top: 6px;
@@ -63,23 +62,21 @@
   &:focus {
     outline: none;
   }
-}
 
-.programs-list__label {
-  &:hover:before {
+  &:hover::before {
     border-color: #bbbbbb;
   }
 
-  &:focus:before {
+  &:focus::before {
     border-color: #bbbbbb;
   }
 
   &:active {
-    &:before {
+    &::before {
       opacity: 0.4;
     }
 
-    &:after {
+    &::after {
       opacity: 0.4;
     }
   }
@@ -91,13 +88,13 @@
     line-height: 20px;
     font-size: 20px;
 
-    &:before {
+    &::before {
       width: 38px;
       height: 38px;
       top: -5px;
     }
 
-    &:after {
+    &::after {
       width: 18px;
       height: 18px;
       left: 11px;
