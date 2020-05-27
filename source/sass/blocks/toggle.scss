@@ -99,26 +99,42 @@
   &--before {
     margin-left: 4px;
   }
+
+  &:active {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  span {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .toggle__button {
+    padding-bottom: 5px;
     font-size: 20px;
     line-height: 20px;
     border-bottom: 1px dotted #bebebe;
-    padding-bottom: 5px;
 
     &--before {
       margin-left: 0;
     }
-  }
 
-  .toggle__button:hover,
-  .toggle__button:focus {
-    border-bottom: 1px solid #989898;
-  }
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid #989898;
+      outline: none;
+    }
 
-  .toggle__button:active {
-    border-bottom: none;
+    &:active {
+      border-bottom-color: transparent;
+      outline: none;
+    }
   }
 }
