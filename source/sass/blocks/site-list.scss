@@ -1,6 +1,7 @@
 .site-list {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 @media (min-width: $tablet-width) {
@@ -17,7 +18,7 @@
   padding-bottom: 23px;
   display: block;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 20px;
   font-size: 20px;
   color: $black;
