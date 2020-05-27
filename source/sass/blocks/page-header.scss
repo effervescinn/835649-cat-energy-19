@@ -14,7 +14,7 @@
 @media (min-width: $desktop-width) {
   .page-header__container {
     position: relative;
-    max-width: 1300px;
+    width: 1220px;
     margin: 0 auto;
     justify-content: center;
   }
@@ -68,7 +68,6 @@
 @media (min-width: $desktop-width) {
   .page-header__wrap {
     padding: 0;
-    padding-left: 40px;
     width: 50%;
   }
 }
