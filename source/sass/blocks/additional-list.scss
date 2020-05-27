@@ -65,7 +65,7 @@
   position: relative;
   padding-left: 16.3%;
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     left: 0;
@@ -75,7 +75,7 @@
     border: 1px solid #d9d9d9;
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     left: 8px;
@@ -88,7 +88,7 @@
   }
 
   &:hover {
-    &:before {
+    &::before {
       border-color: #bababa;
     }
   }
@@ -96,7 +96,7 @@
   &:focus {
     outline: none;
 
-    &:before {
+    &::before {
       border-color: #bababa;
     }
   }

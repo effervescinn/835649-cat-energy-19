@@ -21,7 +21,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header--index:after {
+  .page-header--index::after {
     position: absolute;
     content: "";
     right: 0;
@@ -34,7 +34,7 @@
     z-index: -1;
 
     @media (min-resolution: $retina-dppx),
-    (min-resolution: $retina-dpi) {
+      (min-resolution: $retina-dpi) {
       background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }
@@ -140,7 +140,7 @@
   content: "";
   position: absolute;
   top: 23px;
-  right: 0px;
+  right: 0;
   width: 24px;
   height: 2px;
   background-color: #222222;
@@ -155,13 +155,12 @@
 
 
 .page-header__container--opened .page-header__toggle {
-
   &::before,
   &::after {
     content: "";
     position: absolute;
     top: 30px;
-    right: 0px;
+    right: 0;
     width: 24px;
     height: 2px;
     background-color: #222222;
