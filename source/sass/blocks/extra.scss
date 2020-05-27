@@ -13,9 +13,10 @@
 @media (min-width: $desktop-width) {
   .extra {
     margin-bottom: 85px;
-    max-width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    background: linear-gradient(to bottom,#fff 100px,$green 100px,$green 103px, #fff 103px);
   }
 }
 
@@ -36,7 +37,7 @@
 
 @media (min-width: $desktop-width) {
   .extra__wrap {
-    width: 93.9%;
+    max-width: 1220px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -91,9 +92,10 @@
 
 @media (min-width: $desktop-width) {
   .extra__title {
+    padding-left: 40px;
     padding-top: 75px;
-    padding-left: 3%;
-    padding-right: 2.8%;
+    padding-right: 35px;
+    margin-left: calc((100% - 1300px)/2);
     margin-bottom: 82px;
     align-self: flex-start;
     background-color: $white;
@@ -102,12 +104,14 @@
       width: 100vw;
       bottom: 9px;
       z-index: -1;
+      display: none;
     }
 
     &::before {
       bottom: 9px;
       width: 100vw;
       z-index: -1;
+      display: none;
     }
   }
 }

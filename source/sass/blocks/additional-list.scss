@@ -20,10 +20,13 @@
 
 @media (min-width: $desktop-width) {
   .additional-list {
-    padding-left: 3.1%;
-    padding-right: 3.1%;
+    width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -50,6 +53,7 @@
   .additional-list__item {
     width: 20%;
     margin-bottom: 0;
+    padding-bottom: 30px;
 
     &:nth-child(2n-1) {
       margin-right: 0;
